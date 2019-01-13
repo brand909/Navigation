@@ -1,2 +1,2 @@
 
-![](uploads/dqn1)
+![](uploads/dqn1.png)
