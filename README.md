@@ -8,7 +8,7 @@ DQN applied to a navigation task
 An agent is trained to navigate a square world. A reward of +1 is returned for collecting a yellow banana, while a score of -1 is returned for collecting a blue banana. The state space is 37 dimensions, containing the velocity and perception of the agent's forward direction. The action space is in 4 discrete dimensions, being move forward, backward, turn left, and turn right. An average score of +13 over 100 consecutive episodes solves this task.
 
 ### Initialization
- First, clone this repository. Next, select the environment that matches your operating system:
+ Clone this repository. Next, select the environment that matches your operating system:
  
 •Linux: [here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip)
 •Mac OSX: [here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana.app.zip)
