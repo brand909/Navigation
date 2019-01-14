@@ -52,12 +52,12 @@ I also would like to try different learning rates and alter the length for which
 
 My final chosen hyperperameter values were:
 #
-BUFFER_SIZE = int(1e5)  # replay buffer size                                   #int(1e5)
-BATCH_SIZE = 64         # minibatch size                                       #64
-GAMMA = 0.99            # discount factor                                      #0.99
-TAU = 1e-3              # for soft update of target parameters                 #1e-3
-LR = 5e-4               # learning rate                                        #5e-4
-UPDATE_EVERY = 4        # how often to update the network                      #4
+BUFFER_SIZE = int(1e5)  
+BATCH_SIZE = 64         
+GAMMA = 0.99            
+TAU = 1e-3              
+LR = 5e-4               
+UPDATE_EVERY = 4        
 #
 
-With an epsilon of .99.
+with an epsilon of .99.
