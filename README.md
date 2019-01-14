@@ -37,12 +37,13 @@ cd deep-reinforcement-learning/python
 pip install .
 #
 
-4.) Create an IPython kernel for the drlnd environment.
+4.) Create an IPython kernel for the drlnd environment:
 #
 python -m ipykernel install --user --name drlnd --display-name "drlnd"
 #
 
-5.) Before running code in a notebook, change the kernel to match the drlnd environment by using the drop-down Kernel menu.
+5.) Before running code in a notebook, change the kernel to match the drlnd environment by using the drop-down Kernel menu:
+
 ![](uploads/kernel.png)
 
 ### Implementation
