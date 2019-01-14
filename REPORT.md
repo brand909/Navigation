@@ -48,4 +48,16 @@ Perhaps there is no statistical difference and perhaps the results are mostly ch
 
 In any case, a small epsilon is better for longer training in which you seek to fully optimize an agent. I would like to experiment more with other variants of Q-learning, such as Dueling and Double, as well as use a prioritized experience replay buffer, in which more rare experiences are given higher chances to be sampled. 
 
-I also would like to try different learning rates and alter the length for which the temporal difference target's weight parameters W are frozen. My learn rate was 0.0005. I think increasing too much will cause overshooting of value approximations and can break the algorithm, but I would like try to see how high I can take it before that happens. I would also like to see how much the tau, which can controls the soft updates of the target, can be increased before the target becomes too quickly moving to be used as a baseline. The neural network architecture I had very small layers, 2 hidden layers each of size 20. I'm sure this can also be optimized..
+I also would like to try different learning rates and alter the length for which the temporal difference target's weight parameters W are frozen. My learn rate was 0.0005. I think increasing too much will cause overshooting of value approximations and can break the algorithm, but I would like try to see how high I can take it before that happens. I would also like to see how much the tau, which can controls the soft updates of the target, can be increased before the target becomes too quickly moving to be used as a baseline. The neural network architecture I had very small layers, 2 hidden layers each of size 20. I'm sure this can also be optimized.
+
+My final chosen hyperperameter values were:
+#
+BUFFER_SIZE = int(1e5)  # replay buffer size                                   #int(1e5)
+BATCH_SIZE = 64         # minibatch size                                       #64
+GAMMA = 0.99            # discount factor                                      #0.99
+TAU = 1e-3              # for soft update of target parameters                 #1e-3
+LR = 5e-4               # learning rate                                        #5e-4
+UPDATE_EVERY = 4        # how often to update the network                      #4
+#
+
+With an epsilon of .99.
