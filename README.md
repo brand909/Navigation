@@ -10,6 +10,8 @@ An agent is trained to navigate a square world. A reward of +1 is returned for c
 ![](uploads/dqn.png)
 [Source](https://drive.google.com/file/d/0BxXI_RttTZAhVUhpbDhiSUFFNjg/view)
 
+Please note that the DQN algorithm used is somewhat different than this, using a hyperperameter, tau, to slowly blend the weights of the target and local networks.
+
 ### Initialization
  1.) Select the environment that matches your operating system:
  
